@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>Address__c</members>
+        <members>Arriving_To__c</members>
+        <members>Baggage_Count__c</members>
+        <members>Beverage__c</members>
+        <name>CustomField</name>
+    </types>
+    <version>55.0</version>
+</Package>

@@ -4,10 +4,10 @@
         <fullName>Address__c</fullName>
         <externalId>false</externalId>
         <label>Address</label>
-        <required>true</required>
+        <required>false</required>
         <trackHistory>false</trackHistory>
-        <trackTrending>true</trackTrending>
-        <type>Text</type>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
     </fields>
     <fields>
         <fullName>Arriving_To__c</fullName>
@@ -50,10 +50,10 @@
     </fields>
     <fields>
         <fullName>Beverage__c</fullName>
-        <externalId>false</externalId>
+        <externalId>true</externalId>
         <label>Beverage</label>
         <required>false</required>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
