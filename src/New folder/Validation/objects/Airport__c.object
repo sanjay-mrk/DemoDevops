@@ -6,4 +6,11 @@
         <errorConditionFormula>ISBLANK(Name)</errorConditionFormula>
         <errorMessage>Airport Name cant&apos;t be blank</errorMessage>
     </validationRules>
+	
+	<!--validationRules>
+        <fullName>CitynameCantbeNull</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISBLANK(Name)</errorConditionFormula>
+        <errorMessage>Airport Name cant&apos;t be blank</errorMessage>
+    </validationRules-->
 </CustomObject>
