@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Address__c</fullName>
+        <externalId>false</externalId>
+        <label>Address</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Arriving_To__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Arriving To</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>$Source.Onboarding_From__c</field>
+                <operation>notEqual</operation>
+                <valueField>Airport__c.Id</valueField>
+            </filterItems>
+            <filterItems>
+                <field>$Source.Onboarding_From__c</field>
+                <operation>notEqual</operation>
+                <value></value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Airport__c</referenceTo>
+        <relationshipLabel>Bookings (Arriving To)</relationshipLabel>
+        <relationshipName>Bookings1</relationshipName>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Baggage_Count__c</fullName>
+        <externalId>false</externalId>
+        <label>Baggage Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Beverage__c</fullName>
+        <externalId>false</externalId>
+        <label>Beverage</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Juice(Basis of Availability)</fullName>
+                    <default>false</default>
+                    <label>Juice(Basis of Availability)</label>
+                </value>
+                <value>
+                    <fullName>Beer</fullName>
+                    <default>false</default>
+                    <label>Beer</label>
+                </value>
+                <value>
+                    <fullName>Vodka</fullName>
+                    <default>false</default>
+                    <label>Vodka</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+</CustomObject>
